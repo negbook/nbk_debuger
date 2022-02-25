@@ -2,7 +2,10 @@ imports = function()
 	if GetResourceState("nbk_debuger") ~= "started" then 
 		error("Resource: nbk_debuger Not Loaded Yet!",2)
 	else
-		NativeLog = function(...) return exports['nbk_debuger']:NativeLog(...) end 
+		NativeLog = function(...) 
+			print("NativeLog:",...)
+			return exports['nbk_debuger']:NativeLog(...) 
+		end 
 		
 		
 	end
