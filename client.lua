@@ -1,3 +1,4 @@
-AddEventHandler("nbk_debuger:writenativelog", function (native,...)
+NativeLog = function (native,...)
 	TriggerServerEvent("nbk_debuger:writenativelog",native,...)
-end)
+end 
+exports('NativeLog',NativeLog)	
