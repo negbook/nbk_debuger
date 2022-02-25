@@ -1,0 +1,16 @@
+imports = function()
+	if GetResourceState("nbk_debuger") ~= "started" then 
+		error("Resource: nbk_debuger Not Loaded Yet!",2)
+	else
+		local handle = exports['nbk_debuger']:GetGlobalHandle()
+		
+		
+	end
+end 
+
+if GetCurrentResourceName() ~= "nbk_debuger" then
+	imports() 
+else 
+	InitExample = imports
+end 
+ 
