@@ -4,6 +4,9 @@ author 'negbook'
 
 lua54 'yes'
 
+files {
+	'import',
+}
 
 client_scripts {
 
